@@ -13,30 +13,6 @@
     <title>Portfolio Ainhoa</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    
-    <script>
-        // Detector de Safari
-        (function() {
-            // Verificar si el usuario ya decidió continuar
-            if (localStorage.getItem('bypassSafariCheck') === 'true') {
-                return;
-            }
-            
-            // Detectar Safari
-            var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-            
-            // También detectamos iOS que usa WebKit
-            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-            
-            // Redirigir si es Safari o iOS
-            if (isSafari || isIOS) {
-                window.location.href = 'browser-check.html';
-            }
-        })();
-    </script>
 </head>
 
 <body>

@@ -240,12 +240,10 @@ img {
   position: fixed;
   top: 50%;
   right: 1rem;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   z-index: var(--z-fixed);
 }
 
@@ -381,9 +379,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -649,120 +644,5 @@ img {
   .proyectos_video {
     max-width: 100%;
     height: auto;
-  }
-}
-
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    .imagenes, .imagenes_s {
-      gap: 0;
-    }
-    
-    .imagenes_slide, .imagenes_s .imagenes_slide {
-      margin: 0 2rem;
-    }
-    
-    .inicio_social {
-      gap: 0;
-    }
-    
-    .inicio_social-icon {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .sobremi_container {
-    display: block;
-    padding: 0 1rem;
-  }
-  
-  .sobremi_texto {
-    margin-bottom: 1rem;
-  }
-  
-  .inicio_blob-img {
-    width: 100%;
-    max-width: 260px;
-    height: auto;
-  }
-  
-  .section {
-    overflow: hidden;
-  }
-  
-  .proyectos_container {
-    gap: 2rem;
-  }
-  
-  .proyecto {
-    padding: 1rem;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .proyecto > div {
-    margin: 0 !important;
-  }
-  
-  .sobremi_subtitle {
-    font-size: 1.1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-  }
-  
-  .proyectos_texto {
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
-  
-  .video_wrapper {
-    margin-top: 1rem;
-  }
-  
-  .proyectos_video {
-    border-radius: 8px;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-  
-  .proyecto a {
-    display: inline-block;
-    margin-top: 0.8rem;
-    color: var(--first-color);
-    font-weight: 500;
-    font-size: 0.9rem;
-  }
-  
-  .video_control {
-    padding: 8px 12px;
-  }
-  
-  .video_control i {
-    font-size: 16px;
-  }
-}
-
-@media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    @media (max-width: 480px) {
-      .proyectos_container {
-        display: block;
-      }
-      
-      .proyecto {
-        margin-bottom: 2rem;
-      }
-      
-      .proyecto:last-child {
-        margin-bottom: 0;
-      }
-      
-      .video_wrapper {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-      }
-    }
   }
 }
