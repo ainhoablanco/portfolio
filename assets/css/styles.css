@@ -605,6 +605,9 @@ img {
     max-width: 80px;
     height: auto;
   }
+    .proyectos_texto{
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
